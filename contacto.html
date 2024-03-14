@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Dresser</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="menu container">
+
+            <a href="#" class="logo">Dresser</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="imagenes/menu.png" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="imagenes/car.svg" id="img-carrito" alt="">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Contacto</h1>
+                <p>
+                    ¡Contáctanos para cualquier consulta o comentario!
+                </p>
+
+    </header>
+
+    <section class="contacto container">
+        <h2>Formulario de Contacto</h2>
+        <form action="#" method="post" id="formulario-contacto">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn-1">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="redes-sociales">
+            <h3>Síguenos en redes sociales</h3>
+            <ul>
+                <li><a href="#" target="_blank"><img src="imagenes/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#" target="_blank"><img src="imagenes/x.png" alt="Twitter"></a></li>
+                <li><a href="#" target="_blank"><img src="imagenes/instagram.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+
+        <div class="logotipos">
+            <h3>Nuestros colaboradores</h3>
+            <ul>
+                <li><img src="imagenes/textil.png" alt="Logo 1"></li>
+                <li><img src="imagenes/textil2.png" alt="Logo 2"></li>
+                <li><img src="imagenes/textil3.png" alt="Logo 3"></li>
+                <p>© 2023 Dresser</p>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

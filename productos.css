@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+    color: #181818;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+header {
+    background: linear-gradient(90deg,
+            rgba(241, 237, 220, 1) 0%,
+            rgba(255, 255, 253, 1) 50%,
+            rgba(252, 246, 232, 1) 100%);
+    padding: 70px 0;
+    text-align: center;
+    color: #181818;
+}
+
+
+main {
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 1;
+    color: #181818;
+    margin-bottom: 10px;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ff3C2A;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #111111;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #ff3C2A;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #4E4B5076;
+    padding: 20px;
+    min-width: 400px;
+}
+
+table {
+    width: 100%;
+}
+
+th,
+td {
+    color: #FFFFFF;
+}
+
+.borrar {
+    background-color: #ff3C2A;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 8px 30px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.producto {
+    border: 1px solid #E0E0E0;
+    padding: 20px;
+    text-align: center;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.producto img {
+    max-width: 100%;
+    max-height: 200px;
+    margin-bottom: 10px;
+}
+
+.producto h3 {
+    font-size: 24px;
+    color: #181818;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #4B4B4B;
+    margin-bottom: 10px;
+}
+
+.precio {
+    color: #ff3C2A;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.agregar-carrito {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #ff3C2A;
+    border: 2px solid #ff3C2A;
+    border-radius: 15px;
+    text-transform: capitalize;
+}
+
+.agregar-carrito:hover {
+    color: #FFFFFF;
+    background-color: #ff3C2A;
+}
+
+.footer {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F7F7F7;
+    color: #181818;
+}
+
+.redes-sociales, .logotipos {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.redes-sociales h3, .logotipos h3 {
+    font-size: 17px;
+    color: #181818;
+    margin-bottom: 10px;
+}
+
+.redes-sociales ul, .logotipos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.redes-sociales li, .logotipos li {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.redes-sociales img, .logotipos img {
+    width: 30px;
+    height: 30px;
+}
+
+.redes-sociales a {
+    color: #181818;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.redes-sociales a:hover {
+    color: #ff3C2A;
+}
+
+.logotipos img {
+    max-width: 100px;
+    max-height: 40px;
+}
